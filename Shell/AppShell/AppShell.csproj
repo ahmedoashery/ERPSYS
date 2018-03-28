@@ -36,23 +36,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Practices.Unity">
-      <HintPath>..\..\Lib\Prism\net452\Microsoft.Practices.Unity.dll</HintPath>
+    <Reference Include="MixModes.Synergy.Resources">
+      <HintPath>..\..\Lib\Synergy\MixModes.Synergy.Resources.dll</HintPath>
     </Reference>
     <Reference Include="MixModes.Synergy.Themes">
       <HintPath>..\..\Lib\Synergy\MixModes.Synergy.Themes.dll</HintPath>
     </Reference>
+    <Reference Include="MixModes.Synergy.Utilities">
+      <HintPath>..\..\Lib\Synergy\MixModes.Synergy.Utilities.dll</HintPath>
+    </Reference>
     <Reference Include="MixModes.Synergy.VisualFramework">
       <HintPath>..\..\Lib\Synergy\MixModes.Synergy.VisualFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Prism">
-      <HintPath>..\..\Lib\Prism\net452\Prism.dll</HintPath>
-    </Reference>
-    <Reference Include="Prism.Unity.Wpf">
-      <HintPath>..\..\Lib\Prism\net452\Prism.Unity.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="Prism.Wpf">
-      <HintPath>..\..\Lib\Prism\net452\Prism.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -74,6 +68,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Views\content\DockManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\content\PaneContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\footer\StatusBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\header\TopMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -83,7 +93,23 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="ViewModels\MainMenuViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\PaneContentViewModel.cs" />
+    <Compile Include="ViewModels\StatusBarViewModel.cs" />
+    <Compile Include="ViewModels\WindowsManagerViewModel.cs" />
+    <Compile Include="Views\content\DockManager.xaml.cs">
+      <DependentUpon>DockManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\content\PaneContent.xaml.cs">
+      <DependentUpon>PaneContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\footer\StatusBar.xaml.cs">
+      <DependentUpon>StatusBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\header\TopMenu.xaml.cs">
+      <DependentUpon>TopMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -115,5 +141,6 @@
   <ItemGroup>
     <PackageReference Include="Prism.Unity" Version="6.3.0" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

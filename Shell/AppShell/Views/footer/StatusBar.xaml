@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="AppShell.Views.footer.StatusBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <StatusBar>
+            <TextBlock>
+                    here is the status bar contents...
+            </TextBlock>
+        </StatusBar>
+    </Grid>
+</UserControl>

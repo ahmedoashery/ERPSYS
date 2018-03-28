@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="AppShell.Views.content.DockManager"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:visualFx="http://mixmodes.com/visualFx"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    
+    <visualFx:WindowsManager x:Name="WindowsManager" 
+                             Background="#FF465A7D" />
+</UserControl>

@@ -3,8 +3,37 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="350" Width="525">
+        MinHeight="600"
+        MinWidth="800" 
+        Title="{Binding Title}">
+
     <Grid>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+        <!--grid layout -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Header Region -->
+        <ContentControl Grid.Row="0" 
+                        prism:RegionManager.RegionName="headerRegion" />
+
+        
+        <!-- Content Region -->
+        <ContentControl Grid.Row="1"
+                        prism:RegionManager.RegionName="contentRegion">
+            
+            
+        </ContentControl>
+
+        
+
+        <!-- Footer Region -->
+        <ContentControl Grid.Row="2"
+                        prism:RegionManager.RegionName="footerRegion">
+            
+        </ContentControl>
+
     </Grid>
 </Window>

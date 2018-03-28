@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="AppShell.Views.header.TopMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <!-- Top menu -->
+        <Menu Margin="10,10,10,10" 
+                      Background="Transparent" 
+                      Cursor="Hand">
+            <MenuItem Header="File">
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+            </MenuItem>
+            <MenuItem Header="Services">
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+            </MenuItem>
+            <MenuItem Header="Tools">
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+            </MenuItem>
+            <MenuItem Header="Settings">
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+            </MenuItem>
+            <MenuItem Header="Window">
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+                <MenuItem Header="Menu item" Command=""/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</UserControl>
